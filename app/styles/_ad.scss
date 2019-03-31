@@ -1,0 +1,180 @@
+.ad {
+  padding-top: 15px;
+
+  &__img {
+    align-items: center;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+
+      .ad__discount {
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: $tr;
+      opacity: 0;
+    }
+  }
+
+  &__discount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    color: $w;
+    font-weight: 700;
+    opacity: 0;
+    transition: $tr;
+
+    h3 {
+      font-size: 32px;
+      margin: 0;
+      line-height: 60px;
+
+      @media (max-width: 991.98px) {
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      font-size: 72px;
+      margin: 0;
+      line-height: 60px;
+
+      @media (max-width: 991.98px) {
+        font-size: 45px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &__tagged {
+    width: 100%;
+    max-width: 33px;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+  }
+
+  &__itemCaption {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $b;
+
+    @media (max-width: 1199.98px) {
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: $tc;
+    }
+  }
+
+  &__price {
+    color: $b;
+    margin: 0;
+    font-weight: 500;
+
+    @media (max-width: 575.98px) {
+      font-size: 13px;
+    }
+
+    span {
+      color: rgba(51, 51, 51, 0.54);
+      position: relative;
+      margin-right: 15px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        height: 1px;
+        background-color: #ff0000;
+        width: 100%;
+        max-width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--servicePrice {
+      font-size: 32px;
+      font-weight: 400;
+
+      @media (max-width: 1199.98px) {
+        font-size: 28px;
+      }
+
+      @media (max-width: 991.98px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__items {
+    margin-bottom: 25px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    &--indentItem {
+      .ad__desc {
+        padding-left: 30px;
+
+        @media (max-width: 991.98px) {
+          padding-left: 15px;
+        }
+
+        @media (max-width: 575.98px) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  &__banner {
+    max-width: 180px;
+    width: 100%;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

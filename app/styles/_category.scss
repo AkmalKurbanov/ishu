@@ -1,0 +1,13 @@
+.category {
+	.container {
+		position: relative;
+		@media (max-width: 575.98px) {
+			padding-top: 45px;
+		}
+	}
+	.ad__itemCaption {
+		color: $tc;
+		font-weight: 400;
+		font-size: 15px;
+	}
+}

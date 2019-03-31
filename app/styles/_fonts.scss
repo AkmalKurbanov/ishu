@@ -1,0 +1,4 @@
+@import "mixins/fontface";
+@include font-face("GOSTUI2", "../fonts/GOSTUI2/GOSTUI2 regular/GOSTUI2");
+@include font-face("GOSTUI2", "../fonts/GOSTUI2/GOSTUI2 medium/GOSTUI2-Medium",600);
+@include font-face("GOSTUI2", "../fonts/GOSTUI2/GOSTUI2 bold/GOSTUI2-Bold", 700);

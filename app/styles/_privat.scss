@@ -1,0 +1,244 @@
+.privat {
+	background-color: #EBF7F9;
+	min-height: 95%;
+	&__statusBlock {
+		padding: 25px 0;
+		border-bottom: 1px solid #C4C4C4;
+		.row {
+			margin-bottom: 10px;
+		}
+	}
+	&__caption {
+		font-size: 16px;
+		color: $tc;
+		font-weight: 600;
+		margin: 0;
+	}
+.btnWrap {
+	display: flex;
+	justify-content: flex-end;
+	.btn {
+		max-width: 180px;
+		min-height: 30px;
+			@media (max-width: 575.98px) {
+				font-size: 13px;
+			}
+			}
+}	
+&__statusBar {
+	background: $w;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+min-height: 220px;
+padding: 20px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  @media (max-width: 767.98px) {
+  	margin-bottom: 20px;
+justify-content: space-around;
+min-height: 80px;
+flex-direction: row;
+  }
+}
+&__statusItem {
+	font-size: 14px;
+	color: $b;
+	font-weight: 700;
+	margin: 0;
+	@media (max-width: 767.98px)  {
+		font-size: 13px;
+	}
+}
+&__statusBarItem {
+	margin-bottom: 15px;
+	   @media (max-width: 767.98px)  {
+	   	margin: 0;
+	   }
+	&:last-child {
+	margin: 0;
+	}
+}
+&__statusItemCount {
+	font-size: 70px;
+	line-height: 60px;
+	color: $tc;
+	margin: 0;
+	   @media (max-width: 992.98px) {
+			font-size: 50px;
+	line-height: 40px;
+	   }
+	   	   @media (max-width: 767.98px) {
+			font-size: 20px;
+	line-height: normal;
+	   }
+}
+&__statusItems {
+	margin-bottom: 11px;
+	ul{
+		margin: 0;
+		padding: 0;
+		li{
+			display: inline-block;
+			margin-right: 15px;
+			  @media (max-width: 991.98px) {
+			  	margin-right: 10px;
+			  }
+			    @media (max-width: 767.98px) {
+			  	margin-right: 5px;
+			  }
+			&:last-child {
+				margin-right: 0;
+			}
+			a{
+        color: $tc;
+        position: relative;
+         @media (max-width: 991.98px) {
+font-size: 14px;
+         }
+           @media (max-width: 767.98px) {
+font-size: 13px;
+         }
+        &:before {
+	position: absolute;
+	content: '';
+	height: 4px;
+	background-color: #1AA6B7;
+	width: 0;
+	bottom: -5px;
+	transition: $tr;
+}
+        &:hover {
+        font-weight: 600;
+&:before {
+	width: 100%;
+}
+        }
+			}
+			.active {
+font-weight: 600;
+&:before {
+	width: 100%;
+}
+			}
+		}
+	}
+}
+&__adInfoWrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+margin-bottom: 15px;
+@media (max-width: 575.98px) {
+	flex-direction: column;
+	}
+}
+&__adInfo {
+	background: #FFFFFF;
+border-radius: 5px;
+max-width: 673px;
+width: 100%;
+min-height: 72px;
+position: relative;
+padding: 10px;
+@media (max-width: 575.98px) {
+	margin-bottom: 15px;
+	}
+}
+&__adInfoDate {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	font-size: 10px;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.54);
+	@media (max-width: 575.98px) {
+		position: relative;
+		text-align: right;
+		top: auto;
+		right: auto;
+		margin-bottom: 3px;
+	}
+}
+&__category {
+	padding-right: 100px;	
+	margin-bottom: 5px;
+		@media (max-width: 575.98px) {
+			padding: 0;
+		}
+	&--request {
+		padding: 0;
+	}
+}
+&__categoryItem {
+	display: inline-block;
+	padding: 6px 8px;
+	background-color: #1AA6B7;
+border-radius:  48px 48px 0 48px;
+	cursor: pointer;
+	margin-right: 4px;
+	transition: $tr;
+	margin-bottom: 3px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+				background: rgba(26, 166, 183, 0.7);
+	}
+	p{
+		margin: 0;
+		color: #fff;
+		font-size: 10px;
+	}
+	&--active {
+		background: rgba(26, 166, 183, 0.7);
+	}
+}
+&__categoryDesc {
+	font-size: 12px;
+	color: $tc;
+	margin: 0;
+	padding-left: 5px;
+}
+&__adInfoControlBtns {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+		li{
+			cursor: pointer;
+			width: 30px;
+			margin-left: 10px;
+height: 30px;
+background: #FFFFFF;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+border-radius: 100%;
+transition: $tr;
+text-align: center;
+line-height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #919191;
+&:hover {
+    transform: scale(1.5);
+}
+		}
+	}
+}
+
+
+
+.request {
+margin-top: 20px;
+margin-bottom: 20px;
+&__item {
+min-height: 76px;
+background: #9AFFB0;
+border-radius: 30px 30px 30px 0px;
+margin-top: 15px;
+padding: 5px 20px;
+display: inline-block;
+}
+}

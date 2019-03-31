@@ -1,0 +1,70 @@
+  .share {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+
+    @media (max-width: 575.98px) {
+      padding-right: 0;
+    }
+
+    p {
+      margin-right: 10px;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .likely {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: -5px;
+
+      div {
+        border: 1px solid $tc;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        transition: $tr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        i {
+          font-size: 11px;
+          color: $tc;
+          margin-top: 4px;
+        }
+
+        &:hover {
+          transform: scale(1.5) rotate(360deg);
+        }
+
+        .likely__icon {
+          display: none;
+        }
+      }
+
+      .whithoutBorder {
+        border: none;
+        margin-top: -4px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+
+      .likely .likely__widget {
+        background-color: transparent !important;
+      }
+    }
+  }

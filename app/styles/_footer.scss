@@ -1,0 +1,40 @@
+.footer {
+  flex: 0 0 auto;
+  background-color: $mc;
+
+  &__nav {
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    @media (max-width: 575.98px) {
+      min-height: 50px;
+    }
+
+    li {
+      margin-right: 25px;
+
+      @media (max-width: 575.98px) {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $w;
+
+        @media (max-width: 575.98px) {
+          font-size: 11px;
+        }
+
+        &:hover {
+          color: $tc;
+        }
+      }
+    }
+  }
+}
