@@ -1,12 +1,13 @@
 html,
-body {
+body,
+.mm-page {
   height: 100%;
   font-family: 'GOSTUI2';
 }
 
 .noIndent {
-  padding-left: 0!important;
-  padding-right: 0!important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 // .container {
@@ -76,6 +77,37 @@ button {
 
   li {
     margin: 0;
+  }
+}
+
+.mm-menu {
+
+  .mobileUser {
+    .trigger {
+      display: inline-block;
+      cursor: pointer;
+    }
+    .mobileUserName {
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .mobileProfile {
+    max-width: 40px;
+    height: 40px;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
   }
 }
 
@@ -352,6 +384,7 @@ button {
       a {
         color: #2D9BF3;
         font-size: 12px;
+        cursor: pointer;
 
         &:hover {
           color: #9E9E9e;

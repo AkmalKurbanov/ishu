@@ -70,7 +70,8 @@
                   <li><a href="#">Все для дома</a></li>
                   <li><a href="#">Безопастность</a></li>
                   <li><a href="#">Ремонт</a></li>
-                  <li><a href="https://github.com/AkmalKurbanov/RoyalStroy_html/blob/master/app/main.html">Еще <i class="fal fa-angle-down arrowTrigger-js"></i></a>
+                  <li><a href="https://github.com/AkmalKurbanov/RoyalStroy_html/blob/master/app/main.html">Еще <i
+                        class="fal fa-angle-down arrowTrigger-js"></i></a>
                     <ul class="header__mnuSecondLvl dropMnu-js">
                       <li><a href="#">Юридические</a></li>
                       <li><a href="#">Бухгалтерия</a></li>
@@ -115,6 +116,231 @@
               <div class="odnoklassniki"><i class="fab fa-odnoklassniki"></i></div>
             </div>
           </div>
+
+          <div class="filter__form">
+            <form action="">
+              <textarea class="filter__textarea"
+                placeholder="Опишите услугу, например: Нужен сантехник для ремонта водопровода, заменить 2 смесителя, прочистить сливы..."></textarea>
+              <div class="filter__selectWrap">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="filter__select select-js">
+                      <p>Выберите раздел <i class="fal fa-angle-down"></i></p>
+                    </div>
+                    <div class="privat__categoryItem privat__categoryItem--popularCategory">
+                      <p>Авто</p>
+                    </div>
+                    <div class="privat__categoryItem privat__categoryItem--popularCategory">
+                      <p>Медицина</p>
+                    </div>
+                    <div class="privat__categoryItem privat__categoryItem--popularCategory">
+                      <p>Муж на час</p>
+                    </div>
+                    <div class="privat__categoryItem privat__categoryItem--popularCategory">
+                      <p>Досуг</p>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="filter__select filter__select--city">
+                      <!-- <select>
+                        <option value="" disabled selected>Выберите город</option>
+                        <option>Бишкек</option>
+                        <option>Ош</option>
+                        <option>Баткен</option>
+                        <option>Джалал-Абад</option>
+                        <option>Каракол</option>
+                        <option>Нарын</option>
+                        <option>Талас</option>
+                        <option>Токмак</option>
+                        <option>Балыкчи</option>
+                        <option>Исфана</option>
+                        <option>Кайынды</option>
+                        <option>Кант</option>
+                        <option>Кара-Балта</option>
+                      </select> -->
+                      <label class="selectGeneral" placeholder="select your OS...">
+                        <input type="radio" name="OS">
+                        <div>
+                          <input type="radio" name="OS" value="linux" id="OS[linux]">
+                          <label for="OS[linux]">linux</label>
+                          <input type="radio" name="OS" value="windows" id="OS[windows]">
+                          <label for="OS[windows]">windows</label>
+                          <input type="radio" name="OS" value="other" id="OS[other]">
+                          <label for="OS[other]">other</label>
+                        </div>
+                      </label>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__sections">
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/first-aid-kit.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Медицина</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/balance.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Юридические</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/calculator.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Бухгалтерия</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/wrench.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Обустройство и ремонт</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/confetti.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Торжества</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/money-bag.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Финансы</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/megaphone.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Полиграфия и реклама</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/flower.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Красота и здоровье</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/book (1).svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Образование</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/translator.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Языковые переводы</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/do-not-disturb.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Гостиницы и сауны</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/car.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Авто</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/sunset.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Путешествия</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/cocktail.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Досуг</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/internet.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Интернет</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/delivery-truck.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Транспортные перевозки</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/paint-palette.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Благосустройство и дизайн</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/pawprint.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Животные</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/shield.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Охрана и безопасность</p>
+                  </div>
+                  <div class="filter__sectionsItem">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/job-search.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Работа</p>
+                  </div>
+                </div>
+              </div>
+              <input type="tel" class="filter__input phone-js" id="phone" placeholder="Укажите свой номер телефона"
+                required autocomplete="off">
+            </form>
+          </div>
+
         </div>
       </div>
       <!-- filter end -->
@@ -406,6 +632,7 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/swiper/dist/js/swiper.js"></script>
   <script src="/bower_components/jQuery.mmenu/dist/jquery.mmenu.all.js"></script>
+  <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
