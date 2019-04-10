@@ -1,14 +1,14 @@
-// Required bootstrap don't touch
-@import "./bower_components/bootstrap/scss/functions";
-@import "./bower_components/bootstrap/scss/variables";
-@import "./bower_components/bootstrap/scss/mixins";
-// End bootstrap
+// Required bootstrap4 don't touch
+@import "./bower_components/bootstrap4/scss/functions";
+@import "./bower_components/bootstrap4/scss/variables";
+@import "./bower_components/bootstrap4/scss/mixins";
+// End bootstrap4
 
 
-// Optional bootstrap
-@import "./bower_components/bootstrap/scss/reboot";
-@import "./bower_components/bootstrap/scss/grid";
-@import "./bower_components/bootstrap/scss/nav";
+// Optional bootstrap4
+@import "./bower_components/bootstrap4/scss/reboot";
+@import "./bower_components/bootstrap4/scss/grid";
+@import "./bower_components/bootstrap4/scss/nav";
 // End optional
 
 @import "../fonts/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
