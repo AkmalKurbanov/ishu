@@ -62,15 +62,6 @@ $(document).ready(function () {
       div.removeClass('openClose');
     }
   });
-
-  $(document).mouseup(function (e) {
-    var container = $('.filter__sections');
-
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.slideUp();
-    }
-  });
   // section select end
 
 
@@ -78,6 +69,7 @@ $(document).ready(function () {
   $('.arrowTrigger-js').on('click', function () {
     $('.dropMnu-js').slideToggle();
   });
+
   // drop down menu end
 
   // select file
@@ -122,15 +114,6 @@ $(document).ready(function () {
     $('.hamburger').removeClass('openClose');
     $('.hamburger__line').removeClass('lineBg');
   });
-
-  // $(document).mouseup(function (e) {
-  //   var div = $('.hamburger');
-  //   if (!div.is(e.target) &&
-  //     div.has(e.target).length === 0) {
-  //     div.removeClass('openClose');
-  //   }
-  // });
-
   // hamburger end
 
   // mmenu
@@ -165,8 +148,7 @@ $(document).ready(function () {
 
 
   // rating
-  $(
-    function () {
+  $(function () {
       $('li').on('click', function () {
         var selectedCssClass = 'selected';
         var $this = $(this);

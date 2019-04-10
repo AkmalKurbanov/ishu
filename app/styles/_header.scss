@@ -18,7 +18,7 @@
       padding: 0;
     }
 
-    
+
 
     &--inner {
       padding: 0;
@@ -66,6 +66,10 @@
     li {
       position: relative;
       margin-left: 4.2%;
+      font-weight: 600;
+      color: $tc;
+      position: relative;
+      cursor: pointer;
 
       @media (max-width: 767.98px) {
         margin-left: 2%;
@@ -74,6 +78,14 @@
 
       &:first-child {
         margin-left: 0;
+      }
+
+      i {
+        font-size: 25px;
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
       }
 
       a {
@@ -85,13 +97,7 @@
           color: $mc;
         }
 
-        i {
-          font-size: 25px;
-          position: absolute;
-          right: -20px;
-          top: 50%;
-          transform: translateY(-50%);
-        }
+
 
         &:hover {
           .header__mnuSecondLvl {
@@ -103,7 +109,6 @@
   }
 
   &__mnuSecondLvl {
-    display: none;
     position: absolute;
     min-width: 256px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,6 +117,8 @@
     top: 30px;
     z-index: 999999;
     background-color: $w;
+    opacity: 0;
+    visibility: hidden;
 
     @media (max-width: 1050.98px) {
       right: -20px;
@@ -132,6 +139,7 @@
     li {
       margin-bottom: 8px;
       margin-left: 0;
+
       @media (max-width: 767.98px) {
         margin-bottom: 0;
       }
