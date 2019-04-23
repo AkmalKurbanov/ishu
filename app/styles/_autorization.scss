@@ -7,6 +7,7 @@
   justify-content: flex-end;
   z-index: 999;
   position: relative;
+
   @media (max-width: 575.98px) {
     display: none;
   }
@@ -17,6 +18,13 @@
     color: $tc;
     font-weight: 400;
     line-height: normal;
+    position: relative;
+    cursor: pointer;
+    transition: $tr;
+
+    &:hoveer {
+      color: $mc;
+    }
   }
 
   &__profile {

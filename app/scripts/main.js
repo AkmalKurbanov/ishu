@@ -129,6 +129,16 @@ $(document).ready(function () {
         </div>'
       ]
     }],
+    'iconbar': {
+      'add': true,
+      'top': [
+        '<a href=\'index.html\'><i class=\'far fa-home\'></i></a>'
+      ],
+      'bottom': [
+        '<a href=\'#\'><i class=\'fas fa-cog\'></i></a>',
+        '<a href=\'#\'><i class=\'icon-exit\'></i></a>',
+      ]
+    },
     extensions: ['fx-menu-slide', 'fx-listitems-slide', 'border-full', 'pagedim-black', 'position-right'],
     counters: true,
 
@@ -149,16 +159,15 @@ $(document).ready(function () {
 
   // rating
   $(function () {
-      $('li').on('click', function () {
-        var selectedCssClass = 'selected';
-        var $this = $(this);
-        $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
-        $this
-          .addClass(selectedCssClass)
-          .parent().addClass('vote-cast');
-      });
-    }
-  );
+    $('li').on('click', function () {
+      var selectedCssClass = 'selected';
+      var $this = $(this);
+      $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
+      $this
+        .addClass(selectedCssClass)
+        .parent().addClass('vote-cast');
+    });
+  });
   // rating end
 
 
@@ -234,8 +243,11 @@ $(document).ready(function () {
 
 
 
-
-
+  // loggedIn
+  $('.loggedIn-js').on('click', function () {
+    $('.header__dropSettings').slideToggle();
+  });
+  // loggedIn end
 
 
 
