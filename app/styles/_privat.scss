@@ -1,21 +1,8 @@
 .privat {
-  background-color: #EBF7F9;
-  min-height: 95%;
-
   &__statusBlock {
     padding: 25px 0;
     border-bottom: 1px solid #C4C4C4;
 
-    .row {
-      margin-bottom: 10px;
-    }
-  }
-
-  &__caption {
-    font-size: 16px;
-    color: $tc;
-    font-weight: 600;
-    margin: 0;
   }
 
   .btnWrap {

@@ -1,0 +1,472 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ishu Info</title>
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
+  <link rel="stylesheet" href="/bower_components/jQuery.mmenu/dist/jquery.mmenu.all.css" />
+  <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+
+
+</head>
+
+<body>
+  <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+  <!-- mainWrap -->
+  <div class="mmenu-nav"></div>
+  <div class="mainWrap">
+
+    <!-- contentWrap -->
+    <div class="contentWrap contentWrap--atherBgc">
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+      <!-- header -->
+      <div class="header">
+        <div class="container">
+          <div class="row header__navWrap header__navWrap--inner">
+            <div class="col-lg-2 col-sm-6">
+              <div class="header__logo">
+                <a href="#">Ishu Info</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 order-lg-last">
+              <div class="autorization">
+                <div class="autorization__link loggedIn-js">Дмитрий Толкачев
+                  <div class="header__dropSettings">
+                    <ul>
+                      <li><a href="#">Мои объвления</a></li>
+                      <li><a href="#">Мои услуги</a></li>
+                      <li><a href="#">Заявки</a></li>
+                      <li><a class="settings" href="#"><i class="fas fa-cog"></i>Настройки</a></li>
+                      <li><a href="#" class="exit"><i class="icon-exit"></i>Выход</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="autorization__profile registration-js">
+                  <img src="images/privat/Mask Group.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="header__mnu">
+                <ul class="header__mnuFirstLvl">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Избранное</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header end -->
+
+
+      <!-- filter -->
+      <div class="addService">
+        <div class="container">
+          <div class="breadCrumbs">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+              <li>Добавить услугу</li>
+            </ul>
+          </div>
+          <div class="filter__form filter__form--addService">
+            <h3 class="inner__caption">Добавление услуги</h3>
+            <form action="">
+              <input type="tel" class="filter__input" placeholder="Стоимость услуги" required="" autocomplete="off">
+              <textarea class="filter__textarea" placeholder="Опишите вашу услугу. Укажите самое важное,"></textarea>
+              <div class="filter__selectWrap">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="filter__select addCategory-js">
+                      <div class="chooseSection select-js">
+                        <p>Выберите раздел <i class="fal fa-angle-down"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="filter__select filter__select--city">
+                      <select name="sources" id="sources" class="custom-select sources" placeholder="Выберите город">
+                        <option value="Бишкек">Бишкек</option>
+                        <option value="Ош" class="separateLine">Ош</option>
+                        <option value="Баткен">Баткен</option>
+                        <option value="Джалал-Абад">Джалал-Абад</option>
+                        <option value="Каракол">Каракол</option>
+                        <option value="Нарын">Нарын</option>
+                        <option value="Талас">Талас</option>
+                        <option value="Токмок" class="separateLine">Токмок</option>
+                        <option value="Балыкчи">Балыкчи</option>
+                        <option value="Исфана">Исфана</option>
+                        <option value="Кайынды">Кайынды</option>
+                        <option value="Кант">Кант</option>
+                        <option value="Кара-Балта">Кара-Балта</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__sections">
+                  <div class="filter__sectionsItem" data-value="Медицина">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/first-aid-kit.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Медицина</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Юридические">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/balance.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Юридические</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Бухгалтерия">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/calculator.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Бухгалтерия</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Обустройство и ремонт">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/wrench.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Обустройство и ремонт</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Торжества">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/confetti.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Торжества</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Финансы">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/money-bag.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Финансы</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Полиграфия и реклама">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/megaphone.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Полиграфия и реклама</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Красота и здоровье">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/flower.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Красота и здоровье</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Образование">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/book (1).svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Образование</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Языковые переводы">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/translator.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Языковые переводы</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Гостиницы и сауны">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/do-not-disturb.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Гостиницы и сауны</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Авто">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/car.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Авто</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Путешествия">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/sunset.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Путешествия</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Досуг">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/cocktail.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Досуг</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Интернет">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/internet.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Интернет</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Транспортные перевозки">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/delivery-truck.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Транспортные перевозки</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Благосустройство и дизайн">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/paint-palette.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Благосустройство и дизайн</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Животные">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/pawprint.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Животные</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Охрана и безопасность">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/shield.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Охрана и безопасность</p>
+                  </div>
+                  <div class="filter__sectionsItem" data-value="Работа">
+                    <div class="filter__iconWrap">
+                      <div class="filter__icon">
+                        <img src="fonts/icon/svg icon/job-search.svg" alt="">
+                      </div>
+                    </div>
+                    <p class="filter__sectionName">Работа</p>
+                  </div>
+                </div>
+              </div>
+              <input type="tel" class="filter__input phone-js" id="phone" placeholder="Укажите свой номер телефона"
+                required autocomplete="off">
+              <div class="row">
+                <div class="col-md-5">
+                  <input type="tel" class="filter__input" placeholder="Стоимость услуги" required="" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                  <div class="filter__select filter__select--city">
+                    <select name="sources" id="sources" class="custom-select sources" placeholder="сом">
+                      <option value="сом">сом</option>
+                      <option value="руб">руб</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__inputFile">
+                <div class="uploadbutton">
+                  <div class='input-file-text'>
+                    <i class="fal fa-paperclip"></i>Прикрепить фото</div>
+                  <input class="input-file" type="file" title="Выбрать фото" multiple>
+                </div>
+              </div>
+              <div class="filter__buttonWrap">
+                <button type="submit" class="btn">Предварительный просмотр</button>
+                <button class="btn">Добавить услугу</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <!-- filter end -->
+
+    </div>
+    <!-- contentWrap end -->
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer__wrap">
+        <div class="container">
+          <ul class="footer__nav">
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Вопрос - ответ</a></li>
+            <li><a href="#">Партнерам</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+
+
+
+
+  </div>
+  <!-- mainWrap end -->
+
+
+  <!-- modal windows  -->
+  <div id="autorization" class="registration blurEffect">
+    <div class="registration__modalWindow">
+      <div class="closeBtn"><i class="fal fa-times"></i></div>
+      <div class="registration__logoSide" id="block1">
+        <h2>Ishu Info</h2>
+        <p>Worldwide. 24/7. Simple. Private.</p>
+      </div>
+      <div class="registration__registrationSide" id="block2">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="signIn-tab" data-toggle="tab" href="#signIn" role="tab"
+              aria-controls="signIn" aria-selected="true">Вход</a>
+            <a class="nav-item nav-link" id="registration-tab" data-toggle="tab" href="#registration" role="tab"
+              aria-controls="registration" aria-selected="false">Регистрация</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="signIn" role="tabpanel" aria-labelledby="signIn-tab">
+            <form>
+              <div class="registration__inputWrap">
+                <label for="E-mail">E-mail</label>
+                <input type="text" class="registration__input" name="E-mail" id="E-mail">
+              </div>
+              <div class="registration__inputWrap">
+                <label for="pass">Пароль</label>
+                <input type="password" class="registration__input" name="Пароль" id="pass">
+              </div>
+              <a href="#" class="forget">Забыли пароль?</a>
+              <button class="btn" type="submit">Войти</button>
+              <div class="registration__signIn">
+                <p>Войти через аккаунт в социальных сетях</p>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+            <form>
+              <div class="registration__inputWrap">
+                <i class="icon-user"></i>
+                <input type="text" class="registration__input registration__input--registrationInput" name="Имя"
+                  placeholder="Имя">
+              </div>
+              <div class="registration__inputWrap">
+                <i class="icon-envelope"></i>
+                <input type="text" class="registration__input registration__input--registrationInput" name="Email"
+                  placeholder="Email">
+              </div>
+              <div class="registration__inputWrap">
+                <i class="icon-phone"></i>
+                <input type="text" class="registration__input registration__input--registrationInput phone-js"
+                  name="Телефон">
+              </div>
+              <div class="registration__inputWrap">
+                <i class="icon-unlock"></i>
+                <input type="text" class="registration__input registration__input--registrationInput" name="Пароль"
+                  placeholder="Пароль">
+              </div>
+              <div class="registration__inputWrap">
+                <i class="icon-unlock"></i>
+                <input type="text" class="registration__input registration__input--registrationInput"
+                  name="Подтвердите пароль" placeholder="Подтвердите пароль">
+              </div>
+              <p>Регистрируясь, вы соглашаетесь с <a href="#"> Пользовательское соглашение </a> и <a href="#">
+                  Конфиденциальность </a>
+                ishu.info</p>
+              <button class="btn" type="submit">Регистрация</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- done -->
+  <div id="done" class="done blurEffect">
+    <div class="done__wrap">
+
+      <div class="done__window">
+        <div class="closeBtn"><i class="fal fa-times"></i></div>
+        <div class="done__img">
+          <img src="images/emoji.png" alt="">
+        </div>
+
+        <p>Спасибо! <br> Ваш заказ размещен. <br> С вами свяжуться лучшие исполнители <br> по номеру телефона: <br>
+          +996 555
+          89 39 54</p>
+        <div class="btn">отлично</div>
+      </div>
+    </div>
+  </div>
+  <!-- done end -->
+
+  <!-- modal windows end -->
+
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
+  <script src="/bower_components/jQuery.mmenu/dist/jquery.mmenu.all.js"></script>
+  <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+  <script src="/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="/bower_components/sifter/sifter.js"></script>
+  <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+  <script src="/bower_components/bootstrap4/dist/js/bootstrap.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script> -->
+</body>
+
+</html>
